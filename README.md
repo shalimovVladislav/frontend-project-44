@@ -5,3 +5,6 @@
 [**Brain-even** game > launch example](https://asciinema.org/a/HTaqhlIV6LPP87fUQBXDme9Zl)<br />
 [**Brain-even** game > player win example](https://asciinema.org/a/GqTAaS83CW3wgVYMLYgRfwsL8)<br />
 [**Brain-even** game > player lose example](https://asciinema.org/a/r9xk8OCnkFrZtcFR6GPQGLJcG)<br />
+[**Brain-calc** game > launch example](https://asciinema.org/a/WVTJLraLV5l7ZzuyuhLa9qKCQ)<br />
+[**Brain-calc** game > player win example](https://asciinema.org/a/W8zxjsoAR3fsXvPQKTZszkbuC)<br />
+[**Brain-calc** game > player lose example](https://asciinema.org/a/w8rihUajhKXjlMqudiHsnbu29)<br />

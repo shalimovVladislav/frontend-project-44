@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import { Greeting } from '../src/cli.js';
-import GetRandom from '../src/brain-games/brain-games.js';
+import { GetRandom, AnswerСheck } from '../src/brain-games/brain-games.js';
 import GetResultOfExpression from '../src/brain-games/brain-calc.js';
 
 const BrainCalc = () => {
@@ -14,11 +14,7 @@ const BrainCalc = () => {
     const correctAnswer = GetResultOfExpression(randomNumber1, randomNumber2, operationSign);
     console.log(`Question: ${randomNumber1} ${operationSign} ${randomNumber2}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${username}!`);
+    if (AnswerСheck(userAnswer, correctAnswer, username)) {
       return;
     }
   }

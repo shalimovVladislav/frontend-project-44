@@ -21,4 +21,13 @@ const GetRandom = (type = 'number') => {
   }
   return result;
 };
-export default GetRandom;
+const AnswerСheck = (userAnswer, correctAnswer, username) => {
+  if (userAnswer !== correctAnswer) {
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+    console.log(`Let's try again, ${username}!`);
+    return true;
+  }
+  console.log('Correct!');
+  return false;
+};
+export { GetRandom, AnswerСheck };

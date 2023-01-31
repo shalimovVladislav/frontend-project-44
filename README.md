@@ -8,3 +8,6 @@
 [**Brain-calc** game > launch example](https://asciinema.org/a/WVTJLraLV5l7ZzuyuhLa9qKCQ)<br />
 [**Brain-calc** game > player win example](https://asciinema.org/a/W8zxjsoAR3fsXvPQKTZszkbuC)<br />
 [**Brain-calc** game > player lose example](https://asciinema.org/a/w8rihUajhKXjlMqudiHsnbu29)<br />
+[**Brain-gcd** game > launch example](https://asciinema.org/a/oX31fLpmPRpPFQMc3MfSHgA9j)<br />
+[**Brain-gcd** game > player win example](https://asciinema.org/a/eH5zbVGb5ZHWiU0xun8lo9Wer)<br />
+[**Brain-gcd** game > player lose example](https://asciinema.org/a/gs2ly2FXpmBZLs0t9ylosrJmD)<br />

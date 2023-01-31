@@ -3,8 +3,7 @@ import BrainEven from './brain-games/brain-even.js';
 import BrainCalc from './brain-games/brain-calc.js';
 import BrainGCD from './brain-games/brain-gcd.js';
 
-const StartBrainGame = (gametype) => {
-  const username = Greeting();
+const GameRules = (gametype) => {
   switch (gametype) {
     case 'even':
       console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -18,6 +17,8 @@ const StartBrainGame = (gametype) => {
     default:
       break;
   }
+};
+const GameProcess = (gametype, username) => {
   for (let i = 0; i < 3; i += 1) {
     switch (gametype) {
       case 'even':
@@ -40,5 +41,10 @@ const StartBrainGame = (gametype) => {
     }
   }
   console.log(`Congratulations, ${username}!`);
+};
+const StartBrainGame = (gametype) => {
+  const username = Greeting();
+  GameRules(gametype);
+  GameProcess(gametype, username);
 };
 export default StartBrainGame;

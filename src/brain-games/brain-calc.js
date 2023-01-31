@@ -1,3 +1,6 @@
+import readlineSync from 'readline-sync';
+import { GetRandom, AnswerСheck } from './brain-game.js';
+
 const GetResultOfExpression = (num1, num2, operationSign) => {
   let result = null;
   switch (operationSign) {
@@ -15,4 +18,13 @@ const GetResultOfExpression = (num1, num2, operationSign) => {
   }
   return String(result);
 };
-export default GetResultOfExpression;
+const BrainCalc = (username) => {
+  const randomNumber1 = GetRandom('number');
+  const randomNumber2 = GetRandom('number');
+  const operationSign = GetRandom('sign');
+  const correctAnswer = GetResultOfExpression(randomNumber1, randomNumber2, operationSign);
+  console.log(`Question: ${randomNumber1} ${operationSign} ${randomNumber2}`);
+  const userAnswer = readlineSync.question('Your answer: ');
+  return AnswerСheck(userAnswer, correctAnswer, username);
+};
+export default BrainCalc;

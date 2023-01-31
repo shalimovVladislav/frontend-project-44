@@ -1,3 +1,6 @@
+import readlineSync from 'readline-sync';
+import { GetRandom, AnswerСheck } from './brain-game.js';
+
 const GetGreatestCommonDivisor = (num1, num2) => {
   let a = num1;
   let b = num2;
@@ -10,4 +13,12 @@ const GetGreatestCommonDivisor = (num1, num2) => {
   }
   return String(a + b);
 };
-export default GetGreatestCommonDivisor;
+const BrainGCD = (username) => {
+  const randomNumber1 = GetRandom('number');
+  const randomNumber2 = GetRandom('number');
+  const correctAnswer = GetGreatestCommonDivisor(randomNumber1, randomNumber2);
+  console.log(`Question: ${randomNumber1} ${randomNumber2}`);
+  const userAnswer = readlineSync.question('Your answer: ');
+  return AnswerСheck(userAnswer, correctAnswer, username);
+};
+export default BrainGCD;

@@ -3,6 +3,7 @@ import BrainEven from './brain-games/brain-even.js';
 import BrainCalc from './brain-games/brain-calc.js';
 import BrainGCD from './brain-games/brain-gcd.js';
 import BrainProgression from './brain-games/brain-progression.js';
+import BrainPrime from './brain-games/brain-prime.js';
 
 const GameRules = (gametype) => {
   switch (gametype) {
@@ -17,6 +18,9 @@ const GameRules = (gametype) => {
       break;
     case 'progression':
       console.log('What number is missing in the progression?');
+      break;
+    case 'prime':
+      console.log('Answer "yes" if given number is prime. Otherwise answer "no".?');
       break;
     default:
       break;
@@ -42,6 +46,11 @@ const GameProcess = (gametype, username) => {
         break;
       case 'progression':
         if (BrainProgression(username)) {
+          return;
+        }
+        break;
+      case 'prime':
+        if (BrainPrime(username)) {
           return;
         }
         break;

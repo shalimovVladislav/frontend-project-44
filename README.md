@@ -14,3 +14,7 @@
 [**Brain-gcd** game > launch example](https://asciinema.org/a/oX31fLpmPRpPFQMc3MfSHgA9j)<br />
 [**Brain-gcd** game > player win example](https://asciinema.org/a/eH5zbVGb5ZHWiU0xun8lo9Wer)<br />
 [**Brain-gcd** game > player lose example](https://asciinema.org/a/gs2ly2FXpmBZLs0t9ylosrJmD)<br />
+<br />
+[**Brain-progression** game > launch example](https://asciinema.org/a/EbJMorVczlhZ5cf1sVnjMplSm)<br />
+[**Brain-progression** game > player win example](https://asciinema.org/a/K9KnBWU8ACvLch94gS4iKtIlV)<br />
+[**Brain-progression** game > player lose example](https://asciinema.org/a/jcSKrCndU1FrNaXbMwoiJ3oTt)<br />

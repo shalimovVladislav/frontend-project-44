@@ -18,3 +18,7 @@
 [**Brain-progression** game > launch example](https://asciinema.org/a/EbJMorVczlhZ5cf1sVnjMplSm)<br />
 [**Brain-progression** game > player win example](https://asciinema.org/a/K9KnBWU8ACvLch94gS4iKtIlV)<br />
 [**Brain-progression** game > player lose example](https://asciinema.org/a/jcSKrCndU1FrNaXbMwoiJ3oTt)<br />
+<br />
+[**Brain-prime** game > launch example](https://asciinema.org/a/AUeYIFNiCFdOBI2Q6WWcTmmWg)<br />
+[**Brain-prime** game > player win example](https://asciinema.org/a/ERLuIPQDGjHqWfyQMeCnjGyIT)<br />
+[**Brain-prime** game > player lose example](https://asciinema.org/a/WcAeDiqtREm0a7OlaQgqNV2SB)<br />

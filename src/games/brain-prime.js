@@ -10,7 +10,7 @@ const isPrime = (number) => {
   return 'yes';
 };
 const brainPrime = () => {
-  const randomNumber = getRandom();
+  const randomNumber = getRandom(2);
   const correctAnswer = isPrime(randomNumber);
   const questionAndCorrectAnswer = [randomNumber, correctAnswer];
   return questionAndCorrectAnswer;

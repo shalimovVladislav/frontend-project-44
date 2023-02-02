@@ -1,6 +1,12 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/vladshal/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/vladshal/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/vladshal/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/c4647511d32da7d8bc5e/maintainability" /></a><br />
+# Brain Games<br />
+<br />
+## Mind Games is a collection of math mini games. The collection contains games in which you have to determine an even or odd number, subtract, add and multiply numbers, find the greatest common divisor, etc.<br />
+<br />
+### minimum requirements: Make sure you have Node.js version 13 or higher installed.<br />
+<br />
 [Package installation example](https://asciinema.org/a/EjoPG0t2DxhdTAXEKWKYKBU2V)<br />
 <br />
 [**Brain-even** game > launch example](https://asciinema.org/a/HTaqhlIV6LPP87fUQBXDme9Zl)<br />

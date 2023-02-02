@@ -1,4 +1,4 @@
-const GetRandom = (type = 'number') => {
+const getRandom = (type = 'number') => {
   const max = type === 'number' ? 50 : 3;
   const randomNumber = Math.floor(Math.random() * max);
   if (type === 'number') {
@@ -21,7 +21,7 @@ const GetRandom = (type = 'number') => {
   }
   return result;
 };
-const AnswerСheck = (userAnswer, correctAnswer, username) => {
+const answerСheck = (userAnswer, correctAnswer, username) => {
   if (userAnswer !== correctAnswer) {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     console.log(`Let's try again, ${username}!`);
@@ -30,4 +30,4 @@ const AnswerСheck = (userAnswer, correctAnswer, username) => {
   console.log('Correct!');
   return false;
 };
-export { GetRandom, AnswerСheck };
+export { getRandom, answerСheck };

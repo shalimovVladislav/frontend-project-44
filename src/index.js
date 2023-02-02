@@ -1,11 +1,11 @@
-import Greeting from './cli.js';
-import BrainEven from './brain-games/brain-even.js';
-import BrainCalc from './brain-games/brain-calc.js';
-import BrainGCD from './brain-games/brain-gcd.js';
-import BrainProgression from './brain-games/brain-progression.js';
-import BrainPrime from './brain-games/brain-prime.js';
+import greeting from './cli.js';
+import brainEven from './brain-games/brain-even.js';
+import brainCalc from './brain-games/brain-calc.js';
+import brainGCD from './brain-games/brain-gcd.js';
+import brainProgression from './brain-games/brain-progression.js';
+import brainPrime from './brain-games/brain-prime.js';
 
-const GameRules = (gametype) => {
+const gameRules = (gametype) => {
   switch (gametype) {
     case 'even':
       console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -26,31 +26,31 @@ const GameRules = (gametype) => {
       break;
   }
 };
-const GameProcess = (gametype, username) => {
+const gameProcess = (gametype, username) => {
   for (let i = 0; i < 3; i += 1) {
     switch (gametype) {
       case 'even':
-        if (BrainEven(username)) {
+        if (brainEven(username)) {
           return;
         }
         break;
       case 'calc':
-        if (BrainCalc(username)) {
+        if (brainCalc(username)) {
           return;
         }
         break;
       case 'gcd':
-        if (BrainGCD(username)) {
+        if (brainGCD(username)) {
           return;
         }
         break;
       case 'progression':
-        if (BrainProgression(username)) {
+        if (brainProgression(username)) {
           return;
         }
         break;
       case 'prime':
-        if (BrainPrime(username)) {
+        if (brainPrime(username)) {
           return;
         }
         break;
@@ -60,9 +60,9 @@ const GameProcess = (gametype, username) => {
   }
   console.log(`Congratulations, ${username}!`);
 };
-const StartBrainGame = (gametype) => {
-  const username = Greeting();
-  GameRules(gametype);
-  GameProcess(gametype, username);
+const startBrainGame = (gametype) => {
+  const username = greeting();
+  gameRules(gametype);
+  gameProcess(gametype, username);
 };
-export default StartBrainGame;
+export default startBrainGame;

@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { GetRandom, AnswerСheck } from './brain-game.js';
+import { getRandom, answerСheck } from './brain-game.js';
 
 const isPrime = (number) => {
   for (let i = 2; i < number; i += 1) {
@@ -9,11 +9,11 @@ const isPrime = (number) => {
   }
   return 'yes';
 };
-const BrainPrime = (username) => {
-  const randomNumber = GetRandom('number');
+const brainPrime = (username) => {
+  const randomNumber = getRandom('number');
   const correctAnswer = isPrime(randomNumber);
   console.log(`Question: ${randomNumber}`);
   const userAnswer = readlineSync.question('Your answer: ');
-  return AnswerСheck(userAnswer, correctAnswer, username);
+  return answerСheck(userAnswer, correctAnswer, username);
 };
-export default BrainPrime;
+export default brainPrime;

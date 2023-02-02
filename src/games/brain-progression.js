@@ -22,7 +22,7 @@ const hideProgressionElement = (progression) => {
 const brainProgression = () => {
   const progression = getProgression();
   const correctAnswer = hideProgressionElement(progression);
-  const questionAndCorrectAnswer = [progression, correctAnswer];
+  const questionAndCorrectAnswer = [progression.join(' '), correctAnswer];
   return questionAndCorrectAnswer;
 };
 export { rules, brainProgression };

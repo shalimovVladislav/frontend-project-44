@@ -1,4 +1,5 @@
 import getRandom from '../getRandom.js';
+import startBrainGame from '../index.js';
 
 const rules = 'What number is missing in the progression?';
 const getProgression = () => {
@@ -25,4 +26,4 @@ const brainProgression = () => {
   const questionAndCorrectAnswer = [progression.join(' '), correctAnswer];
   return questionAndCorrectAnswer;
 };
-export { rules, brainProgression };
+export default () => { startBrainGame(rules, brainProgression); };

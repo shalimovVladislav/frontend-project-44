@@ -1,4 +1,5 @@
 import getRandom from '../getRandom.js';
+import startBrainGame from '../index.js';
 
 const rules = 'What is the result of the expression?';
 const getSign = () => {
@@ -44,4 +45,4 @@ const brainCalc = () => {
   const questionAndCorrectAnswer = [question, correctAnswer];
   return questionAndCorrectAnswer;
 };
-export { rules, brainCalc };
+export default () => { startBrainGame(rules, brainCalc); };

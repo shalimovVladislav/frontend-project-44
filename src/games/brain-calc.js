@@ -16,6 +16,7 @@ const getResultOfExpression = (num1, num2, operationSign) => {
       result = (num1 * num2);
       break;
     default:
+      throw new Error(`Unknown order state: '${operationSign}'!`);
   }
   return String(result);
 };

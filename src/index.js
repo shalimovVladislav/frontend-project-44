@@ -5,12 +5,13 @@ const startBrainGame = (rules, getQuestionAndCorrectAnswer) => {
   const username = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${username}!`);
   console.log(rules);
-  for (let i = 0; i < 3; i += 1) {
-    const questionAndCorrectAnswer = getQuestionAndCorrectAnswer();
-    console.log(`Question: ${questionAndCorrectAnswer[0]}`);
+  const rounds = 3;
+  for (let i = 0; i < rounds; i += 1) {
+    const [question, CorrectAnswer] = getQuestionAndCorrectAnswer();
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer !== questionAndCorrectAnswer[1]) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${questionAndCorrectAnswer[1]}'.`);
+    if (userAnswer !== CorrectAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${CorrectAnswer}'.`);
       console.log(`Let's try again, ${username}!`);
       return;
     }

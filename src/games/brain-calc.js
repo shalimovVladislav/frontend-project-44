@@ -22,7 +22,7 @@ const getResultOfExpression = (num1, num2, operationSign) => {
 const brainCalc = () => {
   const randomNumber1 = getRandom();
   const randomNumber2 = getRandom();
-  const operationSign = operators[getRandom(0,3)];
+  const operationSign = operators[getRandom(0, 3)];
   const question = `${randomNumber1} ${operationSign} ${randomNumber2}`;
   const correctAnswer = getResultOfExpression(randomNumber1, randomNumber2, operationSign);
   const questionAndCorrectAnswer = [question, correctAnswer];

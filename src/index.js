@@ -7,11 +7,11 @@ const startBrainGame = (rules, getQuestionAndCorrectAnswer) => {
   console.log(rules);
   const rounds = 3;
   for (let i = 0; i < rounds; i += 1) {
-    const [question, CorrectAnswer] = getQuestionAndCorrectAnswer();
+    const [question, correctAnswer] = getQuestionAndCorrectAnswer();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer !== CorrectAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${CorrectAnswer}'.`);
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${username}!`);
       return;
     }

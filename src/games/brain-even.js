@@ -1,4 +1,4 @@
-import getRandom from './brain-game.js';
+import getRandom from '../getRandom.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const brainEven = () => {

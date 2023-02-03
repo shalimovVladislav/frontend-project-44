@@ -1,4 +1,4 @@
-import getRandom from './brain-game.js';
+import getRandom from '../getRandom.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 const getGreatestCommonDivisor = (num1, num2) => {

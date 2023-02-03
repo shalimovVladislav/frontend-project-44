@@ -1,4 +1,4 @@
-import getRandom from './brain-game.js';
+import getRandom from '../getRandom.js';
 
 const rules = 'What is the result of the expression?';
 const getSign = () => {

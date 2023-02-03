@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
-import greeting from './cli.js';
 
 const startBrainGame = (rules, getQuestionAndCorrectAnswer) => {
-  const username = greeting();
+  console.log('Welcome to the Brain Games!');
+  const username = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${username}!`);
   console.log(rules);
   for (let i = 0; i < 3; i += 1) {
     const questionAndCorrectAnswer = getQuestionAndCorrectAnswer();

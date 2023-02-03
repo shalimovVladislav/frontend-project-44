@@ -26,7 +26,7 @@ const brainCalc = () => {
   const operationSign = operators[getRandom(0, 3)];
   const question = `${randomNumber1} ${operationSign} ${randomNumber2}`;
   const correctAnswer = getResultOfExpression(randomNumber1, randomNumber2, operationSign);
-  const questionAndCorrectAnswer = [question, correctAnswer];
-  return questionAndCorrectAnswer;
+  const getQuestionAndCorrectAnswer = [question, correctAnswer];
+  return getQuestionAndCorrectAnswer;
 };
 export default () => { startBrainGame(rules, brainCalc); };

@@ -19,7 +19,7 @@ const brainGCD = () => {
   const randomNumber2 = getRandom(1);
   const question = `${randomNumber1} ${randomNumber2}`;
   const correctAnswer = getGreatestCommonDivisor(randomNumber1, randomNumber2);
-  const questionAndCorrectAnswer = [question, correctAnswer];
-  return questionAndCorrectAnswer;
+  const getQuestionAndCorrectAnswer = [question, correctAnswer];
+  return getQuestionAndCorrectAnswer;
 };
 export default () => { startBrainGame(rules, brainGCD); };

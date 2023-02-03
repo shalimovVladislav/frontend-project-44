@@ -13,7 +13,7 @@ const isPrime = (number) => {
 const brainPrime = () => {
   const randomNumber = getRandom(2);
   const correctAnswer = (isPrime(randomNumber) ? 'yes' : 'no');
-  const questionAndCorrectAnswer = [randomNumber, correctAnswer];
-  return questionAndCorrectAnswer;
+  const getQuestionAndCorrectAnswer = [randomNumber, correctAnswer];
+  return getQuestionAndCorrectAnswer;
 };
 export default () => { startBrainGame(rules, brainPrime); };
